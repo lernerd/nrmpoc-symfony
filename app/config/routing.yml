@@ -1,3 +1,7 @@
+stats_incoming_facebook:
+    resource: "@StatsIncomingFacebookBundle/Resources/config/routing.php"
+    prefix:   /
+
 stats_incoming_twitter:
     resource: "@StatsIncomingTwitterBundle/Resources/config/routing.php"
     prefix:   /

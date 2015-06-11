@@ -19,6 +19,7 @@ class AppKernel extends Kernel
             new AppBundle\AppBundle(),
             new FOS\RestBundle\FOSRestBundle(),
             new Stats\Incoming\TwitterBundle\StatsIncomingTwitterBundle(),
+            new Stats\Incoming\FacebookBundle\StatsIncomingFacebookBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
