@@ -2,7 +2,7 @@
 lock '3.4.0'
 
 set :application, 'nrm-poc'
-set :repo_url, 'git@github.com:lernerd/nrmpoc.git'
+set :repo_url, 'git@github.com:lernerd/nrmpoc-symfony.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp

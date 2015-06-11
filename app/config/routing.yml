@@ -1,3 +1,7 @@
+stats_incoming_twitter:
+    resource: "@StatsIncomingTwitterBundle/Resources/config/routing.php"
+    prefix:   /
+
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
