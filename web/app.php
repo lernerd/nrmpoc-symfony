@@ -26,5 +26,14 @@ $kernel->loadClassCache();
 //Request::enableHttpMethodParameterOverride();
 $request = Request::createFromGlobals();
 $response = $kernel->handle($request);
+
+$response->headers->set('Content-Type', 'application/json');
+$response->headers->set('Access-Control-Allow-Origin', '*');
+$response->headers->set("Access-Control-Allow-Credentials", "true");
+$response->headers->set('Access-Control-Allow-Headers', 'X-Requested-With');
+$response->headers->set('Access-Control-Allow-Headers', 'Content-Type');
+$response->headers->set("Access-Control-Allow-Methods", "GET, POST, DELETE, PUT, PATCH, OPTIONS");
+$response->headers->set("Access-Control-Allow-Origin", "*");
+
 $response->send();
 $kernel->terminate($request, $response);

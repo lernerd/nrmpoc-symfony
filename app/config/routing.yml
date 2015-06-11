@@ -1,9 +1,15 @@
+stats:
+    pattern:  /report
+    defaults: { _controller: StatsIncomingReportBundle:Default:stats, _format: ~ }
+    requirements:
+        _method: GET
+
 stats_incoming_report:
     resource: "@StatsIncomingReportBundle/Resources/config/routing.php"
     prefix:   /
 
 stats_report:
-    resource: "@StatsReportBundle/Resources/config/routing.php"
+    resource: "@StatsIncomingReportBundle/Resources/config/routing.php"
     prefix:   /
 
 stats_incoming_facebook:
